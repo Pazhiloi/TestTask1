@@ -1,0 +1,14 @@
+@media (max-width: 1290px){
+ .svg{
+  width: 15px;
+ }
+}
+@media (max-width: 900px){
+  .svg{
+    width: 10px;
+    height: 10px;
+  }
+  .path{
+    fill: #878D9D;
+  }
+}

@@ -1,0 +1,208 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+.wrapper,
+.imageWrapper {
+  display: flex;
+  align-items: center;
+}
+.image,
+.markImage,
+.starImage {
+  margin-right: 8px;
+  cursor: pointer;
+}
+.starImage{
+  display: none;
+}
+.imageWrapper:last-child {
+  margin-left: 24px;
+}
+.infoWrapper {
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.textWrapper{
+  max-width: 793px;
+  width: 100%
+}
+.infoTitle {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.75px;
+  max-width: 500px;
+  width: 100%;
+}
+.price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.625px;
+  margin-bottom: 1px;
+}
+.date {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.5625px;
+  color: rgba(56, 65, 93, 0.355988);
+  font-stretch: 100;
+  margin-bottom: 7px;
+}
+.subtitle {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.list {
+  list-style: none;
+  margin-bottom: 30px;
+}
+.listItem {
+  margin-top: 3px;
+  position: relative;
+}
+.listItem::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  left: -15px;
+  width: 9px;
+  height: 9px;
+  background: rgba(56, 69, 100, 0.632594);
+}
+.info {
+  padding-bottom: 40px;
+}
+.additional,
+.images {
+  padding: 40px 0;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+}
+.button:not(:first-child) {
+  margin-left: 8px;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+}
+.itemWrapper:not(:first-child) {
+  margin-left: 10px;
+}
+.itemWrapper .item {
+ width: 200px;
+ height: 115px;
+ border-radius: 8px;
+}
+.link {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  width: 213px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 8px;
+  background: rgba(56, 69, 100, 0.14);
+  text-decoration: none;
+  color: #384564;
+}
+.arrow{
+  margin-right: 19px;
+}
+.mediaPrice{
+  display: none;
+}
+
+@media(max-width:1110px){
+  .additionalWrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  .items{
+    justify-content: center;
+  }
+  .mainButton{
+    display: none;
+  }
+  .date{
+    font-weight: 300;
+    font-size: 13px;
+  }
+  .infoTitle{
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .top{
+    display: block;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .wrapper{
+    margin-top: 35px;
+  }
+  .starImage{
+    display: block;
+  }
+  .markImage{
+    display: none;
+  }
+  .infoPrice{
+    display: none;
+  }
+  .mediaPrice{
+  display: block;
+}
+.dateWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.textWrapper{
+  max-width: 100%;
+}
+.buttonWrapper{
+  display: flex;
+  justify-content: center;
+}
+.itemWrapper:last-child{
+display: none;
+}
+.itemWrapper{
+  max-width: 200px;
+  width: 100%;
+  height: 115px;
+}
+.link{
+  display: none;
+}
+}
+
+@media(max-width: 430px) {
+  .itemWrapper:first-child{
+    display: none;
+  }
+}

@@ -1,0 +1,10 @@
+.inner{
+  display: flex;
+  justify-content: center;
+}
+
+@media(max-width: 1110px){
+  .inner{
+    display: block;
+  }
+}
